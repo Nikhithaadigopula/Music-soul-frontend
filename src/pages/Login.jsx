@@ -14,12 +14,8 @@ const Login = () => {
     setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  let __URL__ ;
-  if ( document.domain === "localhost" ) {
-    __URL__ = "https://music-soul-backend.onrender.com";
-  } else {
-    __URL__ = "";
-  }
+  let  __URL__ = "https://music-soul-backend.onrender.com"; ;
+ 
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
